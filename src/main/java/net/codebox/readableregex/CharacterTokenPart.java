@@ -18,6 +18,7 @@ public abstract class CharacterTokenPart{
     
     protected abstract CharacterTokenPart copyAndSetFirstPartInToken();
     protected abstract CharacterTokenPart copyAndSetLastPartInToken();
+    protected Long serialNumber=0L;
     
     private static class SimpleCharacterTokenPart extends CharacterTokenPart{
         private final Character[] characters;
